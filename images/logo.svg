@@ -1,0 +1,33 @@
+<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .text-main {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      fill: white;
+    }
+    .text-sub {
+      font-family: sans-serif;
+      font-size: 14px;
+      letter-spacing: 3px;
+      fill: white;
+    }
+    .line {
+      stroke: white;
+      stroke-width: 2;
+      fill: none;
+    }
+  </style>
+
+  <!-- 車ライン -->
+  <path class="line" d="M80 100 Q200 40 400 60 Q500 70 550 100" />
+
+  <!-- メインテキスト -->
+  <text x="300" y="130" text-anchor="middle" class="text-main">
+    Gloss Works
+  </text>
+
+  <!-- サブテキスト -->
+  <text x="300" y="160" text-anchor="middle" class="text-sub">
+    CAR DETAILING
+  </text>
+</svg>

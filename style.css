@@ -12,7 +12,7 @@ body {
   font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
   line-height: 1.8;
   color: #222;
-  background: #fff;
+  background: #ffffff;
 }
 
 img {
@@ -88,7 +88,7 @@ header {
   top: 0;
   z-index: 1000;
   background: rgba(17, 17, 17, 0.95);
-  color: #fff;
+  color: #ffffff;
   border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
@@ -161,10 +161,10 @@ header {
 }
 
 .point-card {
-  background: #f7f7f7;
+  background: rgba(255, 255, 255, 0.92);
   padding: 28px 24px;
   border-radius: 18px;
-  border: 1px solid #ececec;
+  border: 1px solid rgba(255, 255, 255, 0.35);
   color: #222;
 }
 
@@ -174,8 +174,12 @@ header {
   color: #111;
 }
 
+.point-card p {
+  color: #444;
+  line-height: 1.8;
+}
 .about {
-  background: #fafafa;
+  background: #ffffff;
 }
 
 .about-grid,
@@ -495,4 +499,11 @@ footer {
   max-width: 600px;
   margin: 20px 0 30px;
   color: rgba(255,255,255,0.85);
+}
+.logo img {
+  height: 50px;
+}
+
+.hero-logo {
+  width: 300px;
 }
