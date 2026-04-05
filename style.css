@@ -101,10 +101,15 @@ header {
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.1rem;
-  letter-spacing: 0.08em;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.1em;
   white-space: nowrap;
+}
+
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block;
 }
 
 .nav ul {
@@ -128,23 +133,23 @@ header {
 
 .hero-sub {
   display: inline-block;
-  font-size: 0.95rem;
-  margin-bottom: 18px;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
   padding: 6px 12px;
   border: 1px solid rgba(255,255,255,0.3);
   border-radius: 999px;
 }
 
-.hero h1 {
-  font-size: clamp(2.1rem, 5vw, 4rem);
-  line-height: 1.25;
+.hero-title {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  line-height: 1.3;
   margin-bottom: 20px;
 }
 
-.hero p {
-  max-width: 680px;
-  margin-bottom: 30px;
-  color: rgba(255,255,255,0.9);
+.hero-text {
+  max-width: 600px;
+  margin: 20px 0 30px;
+  color: rgba(255,255,255,0.85);
 }
 
 .hero-btns {
@@ -178,6 +183,7 @@ header {
   color: #444;
   line-height: 1.8;
 }
+
 .about {
   background: #ffffff;
 }
@@ -417,6 +423,16 @@ footer {
   .contact-grid {
     grid-template-columns: 1fr;
   }
+
+  .header-inner {
+    min-height: 64px;
+  }
+
+  .hero-inner,
+  .hero-title,
+  .hero-text {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -424,8 +440,83 @@ footer {
     padding: 64px 0;
   }
 
+  .header-inner {
+    min-height: 60px;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
   .hero {
     padding: 96px 0 72px;
+  }
+
+  .hero-sub {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+    padding: 6px 12px;
+  }
+
+  .hero-title {
+    font-size: clamp(1.9rem, 7vw, 2.8rem);
+    line-height: 1.25;
+    margin-bottom: 18px;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin: 16px 0 28px;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.88);
+  }
+
+  .hero-btns {
+    gap: 12px;
+  }
+
+  .btn {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+
+  .intro-points {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 32px;
+  }
+
+  .point-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .point-card h3 {
+    font-size: 1rem;
+  }
+
+  .point-card p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .card-body,
+  .price-card,
+  .access-box,
+  .contact-box,
+  .faq-item {
+    padding: 20px;
+  }
+
+  .access-box dl div,
+  .contact-box dl div {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .map-placeholder {
+    min-height: 220px;
   }
 
   .floating-cta {
@@ -443,67 +534,6 @@ footer {
     font-weight: bold;
     padding: 14px 20px;
     border-radius: 999px;
-    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
   }
-}
-
-/* フォント変更 */
-
-.logo {
-  font-family: 'Playfair Display', serif;
-  letter-spacing: 0.1em;
-}
-.hero-logo {
-  width: 250px;
-  margin-bottom: 20px;
-}
-
-.logo img {
-  height: 56px;
-  width: auto;
-  display: block;
-}
-
-.hero-logo {
-  width: min(420px, 80%);
-  margin: 0 0 24px;
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .logo img {
-    height: 42px;
-  }
-
-  .hero-logo {
-    width: min(300px, 85%);
-    margin-bottom: 20px;
-  }
-}
-.hero-sub {
-  display: inline-block;
-  font-size: 0.9rem;
-  margin-bottom: 16px;
-  padding: 6px 12px;
-  border: 1px solid rgba(255,255,255,0.3);
-  border-radius: 999px;
-}
-
-.hero-title {
-  font-size: clamp(1.8rem, 4vw, 3.2rem);
-  line-height: 1.3;
-  margin-bottom: 20px;
-}
-
-.hero-text {
-  max-width: 600px;
-  margin: 20px 0 30px;
-  color: rgba(255,255,255,0.85);
-}
-.logo img {
-  height: 50px;
-}
-
-.hero-logo {
-  width: 300px;
 }
